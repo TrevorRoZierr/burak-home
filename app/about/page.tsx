@@ -21,7 +21,7 @@ const Content = ({ title, image, subTitle }: Props) => (
   </div>
 );
 
-const About = (props: Props) => {
+const page = () => {
   return (
     <Content
       title="About"
@@ -31,4 +31,4 @@ const About = (props: Props) => {
   );
 };
 
-export default About;
+export default page;

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+/*import emailjs from "@emailjs/browser";*/
 
 type Props = {
   title: string;
@@ -19,7 +19,7 @@ const Content = ({ title, subTitle }: Props) => (
   </div>
 );
 
-const page = (props: Props) => {
+const page = () => {
   /*const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: { preventDefault: () => void }) => {

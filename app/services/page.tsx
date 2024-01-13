@@ -21,7 +21,7 @@ const Content = ({ title, image, subTitle }: Props) => (
   </div>
 );
 
-const Services = (props: Props) => {
+const page = () => {
   return (
     <div>
       <Content
@@ -48,4 +48,4 @@ const Services = (props: Props) => {
   );
 };
 
-export default Services;
+export default page;
