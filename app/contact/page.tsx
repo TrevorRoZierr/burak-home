@@ -20,7 +20,7 @@ const Content = ({ title, subTitle }: Props) => (
 );
 
 const page = (props: Props) => {
-  const form = useRef<HTMLFormElement | null>(null);
+  /*const form = useRef<HTMLFormElement | null>(null);
 
   const sendEmail = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -43,14 +43,15 @@ const page = (props: Props) => {
         );
     }
   };
+
+  */
+
   return (
     <div>
       <Content title="Contact" subTitle="Message us for collaboration." />
       <div className="flex justify-center items-center flex-col sm:py-2 py-4 sm:px-10 px-8">
         <form
           autoComplete="off"
-          ref={form}
-          onSubmit={sendEmail}
           className="flex justify-center items-center flex-col"
         >
           <input
