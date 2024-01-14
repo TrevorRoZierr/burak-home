@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useRef } from "react";
+import GoUp from "../components/GoUp";
 /*import emailjs from "@emailjs/browser";*/
 
 type Props = {
@@ -110,6 +111,7 @@ const page = () => {
           </div>
         </form>
       </div>
+      <GoUp />
     </div>
   );
 };

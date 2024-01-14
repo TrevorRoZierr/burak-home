@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GoUp from "./components/GoUp";
 
 type Props = {
   title: string;
@@ -14,8 +15,8 @@ const Content = ({ title, image, subTitle }: Props) => (
     <img
       src={image}
       alt="Vision"
-      className="sm:mt-10 mt-6 sm:w-[40%] sm:h-[50%] sm:p-1 p-1 rounded"
-      style={{border: "4px solid darkgreen"}}
+      className="sm:mt-10 mt-6 sm:w-[40%] sm:h-[50%] sm:p-1 p-1 rounded hover:shadow-[0px_0px_20px_1px_rgba(0,0,0,1)] sm:hover:w-[45%] hover:p-2 duration-500"
+      style={{ border: "4px solid #71B6CF" }}
     />
     <p className="sm:mt-10 mt-6 sm:font-bold font-medium sm:text-lg text-md sm:w-[40%] sm:h-[50%] text-center">
       {subTitle}
@@ -26,19 +27,37 @@ const Content = ({ title, image, subTitle }: Props) => (
 export default function Home() {
   return (
     <section>
-      <div className="flex justify-center items-center sm:p-20 p-10 bg-gradient-to-r from-green-500 to-green-900 border-b-4">
+      <div className="flex justify-center items-center sm:p-32 p-10 bg-gradient-to-r from-[#71B6CF] to-cyan-900 border-t-4 border-b-4">
+        <Link
+          href="/"
+          className="sm:text-lg text-md sm:mr-6 mr-3 sm:px-10 px-2 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-cyan-600 hover:text-black hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
+        >
+          Home
+        </Link>
         <Link
           href="/about"
-          className="sm:text-lg text-md sm:mr-6 mr-3 sm:px-10 px-5 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-green-700 hover:text-white hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
+          className="sm:text-lg text-md sm:mr-6 mr-3 sm:px-10 px-2 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-cyan-600 hover:text-black hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
         >
           About
         </Link>
         <Link
           href="/services"
-          className="sm:text-lg text-md sm:ml-6 ml-3 sm:px-8 px-2 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-green-700 hover:text-white hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
+          className="sm:text-lg text-md sm:mr-6 mr-3 sm:px-10 px-2 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-cyan-600 hover:text-black hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
         >
           Services
         </Link>
+        <Link
+          href="/contact"
+          className="sm:text-lg text-md sm:mr-6 mr-3 sm:px-10 px-2 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-cyan-600 hover:text-black hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
+        >
+          Contact
+        </Link>
+        {/* <Link
+          href="/services"
+          className="sm:text-lg text-md sm:ml-6 ml-3 sm:px-8 px-2 sm:py-3 py-1 bg-gray-200 rounded sm:font-semibold font-medium border-2 duration-300 hover:underline hover:bg-green-700 hover:text-white hover:shadow-[0.25rem_0.25rem__0px_0px_rgba(0,0,0,1)]"
+        >
+          Services
+        </Link> */}
       </div>
       <Content
         title="Vision"
@@ -60,6 +79,7 @@ export default function Home() {
         image="/inn.jpeg"
         subTitle="In the fast paced world of technology, adaptability is crucial. We stay at the forefront of industry developments, embracing the latest trends and technologies to provide you with forward-thinking solutions."
       />
+      <GoUp />
     </section>
   );
 }

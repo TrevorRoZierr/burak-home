@@ -1,3 +1,5 @@
+import GoUp from "../components/GoUp";
+
 type Props = {
   title: string;
   image: string;
@@ -12,8 +14,8 @@ const Content = ({ title, image, subTitle }: Props) => (
     <img
       src={image}
       alt="Vision"
-      className="sm:mt-10 mt-6 sm:w-[40%] sm:h-[50%] sm:p-1 p-1 rounded"
-      style={{ border: "4px solid darkgreen" }}
+      className="sm:mt-10 mt-6 sm:w-[40%] sm:h-[50%] sm:p-1 p-1 rounded hover:shadow-[0px_0px_20px_1px_rgba(0,0,0,1)] sm:hover:w-[45%] hover:p-2 duration-500"
+      style={{ border: "4px solid #71B6CF" }}
     />
     <p className="sm:mt-10 mt-6 sm:font-bold font-medium sm:text-lg text-md sm:w-[40%] sm:h-[50%] text-center">
       {subTitle}
@@ -23,11 +25,14 @@ const Content = ({ title, image, subTitle }: Props) => (
 
 const page = () => {
   return (
-    <Content
-      title="About"
-      image="/pledge.jpg"
-      subTitle="Burak Solutions is a dynamic and multifaceted IT consulting and services company. With a broad spectrum of services, we are your one-stop solution for all IT-related backed up by industry experts with over a 25 years of experience. Our mission is to empower businesses with tailored, high-quality solutions to meet their diverse needs."
-    />
+    <>
+      <Content
+        title="About"
+        image="/pledge.jpg"
+        subTitle="Burak Solutions is a dynamic and multifaceted IT consulting and services company backed by industry experts over 25 years of experience. With a broad spectrum of services, we are your one-stop solution for all IT-related. Our mission is to empower businesses with tailored, high-quality solutions to meet their diverse needs."
+      />
+      <GoUp />
+    </>
   );
 };
 
