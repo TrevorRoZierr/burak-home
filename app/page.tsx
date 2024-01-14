@@ -79,7 +79,6 @@ export default function Home() {
         image="/inn.jpeg"
         subTitle="In the fast paced world of technology, adaptability is crucial. We stay at the forefront of industry developments, embracing the latest trends and technologies to provide you with forward-thinking solutions."
       />
-      <GoUp />
     </section>
   );
 }

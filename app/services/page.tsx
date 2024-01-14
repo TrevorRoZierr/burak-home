@@ -39,14 +39,13 @@ const page = () => {
       <Content
         title="TRAINING PROGRAM"
         image="/cp.jpg"
-        subTitle="Invest in your team's professional development with Burak Solutions certification programs. Our training modules are designed to enhance skills, knowledge, and proficiency in the latest technologies and industry best practices. Equip your workforce with the certifications they need to stay ahead in today's competitive IT landscape."
+        subTitle="Invest in your team's professional development with Burak Solutions training programs. Our training modules are designed to enhance skills, knowledge, and proficiency in the latest technologies and industry best practices. Equip your workforce with the certifications they need to stay ahead in today's competitive IT landscape."
       />
       <Content
         title="MANAGED SERVICES"
         image="/ms.jpg"
         subTitle="Experience unparalleled support with Burak Solutions' managed services. Our proactive approach to IT management ensures your systems run smoothly, minimizing downtime and maximizing productivity. From routine maintenance to real-time monitoring, we provide comprehensive solutions tailored to your unique business needs.  "
       />
-      <GoUp />
     </div>
   );
 };

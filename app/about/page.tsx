@@ -31,7 +31,6 @@ const page = () => {
         image="/pledge.jpg"
         subTitle="Burak Solutions is a dynamic and multifaceted IT consulting and services company backed by industry experts over 25 years of experience. With a broad spectrum of services, we are your one-stop solution for all IT-related. Our mission is to empower businesses with tailored, high-quality solutions to meet their diverse needs."
       />
-      <GoUp />
     </>
   );
 };

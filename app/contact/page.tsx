@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useRef } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import GoUp from "../components/GoUp";
-/*import emailjs from "@emailjs/browser";*/
 
 type Props = {
   title: string;
@@ -21,9 +21,9 @@ const Content = ({ title, subTitle }: Props) => (
 );
 
 const page = () => {
-  /*const form = useRef<HTMLFormElement | null>(null);
+  const form = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = (e: { preventDefault: () => void }) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (form.current) {
@@ -37,6 +37,7 @@ const page = () => {
         .then(
           (result) => {
             console.log(result.text);
+            form.current?.reset();
           },
           (error) => {
             console.log(error.text);
@@ -45,13 +46,13 @@ const page = () => {
     }
   };
 
-  */
-
   return (
     <div>
-      <Content title="Contact" subTitle="Message us for collaboration." />
+      <Content title="Contact" subTitle="Message us to connect." />
       <div className="flex justify-center items-center flex-col sm:py-2 py-4 sm:px-10 px-8">
         <form
+          ref={form}
+          onSubmit={sendEmail}
           autoComplete="off"
           className="flex justify-center items-center flex-col"
         >
@@ -104,14 +105,13 @@ const page = () => {
           <div className="flex justify-center items-center flex-col">
             <button
               type="submit"
-              className="text-center p-4 border-indigo-600 border-2 rounded-full bg-black text-white sm:font-medium hover:text-black hover:bg-white duration-300"
+              className="text-center p-4 border-2 rounded-full bg-black text-white sm:font-medium hover:text-black hover:bg-white duration-300"
             >
               Send Message
             </button>
           </div>
         </form>
       </div>
-      <GoUp />
     </div>
   );
 };
