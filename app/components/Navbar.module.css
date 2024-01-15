@@ -5,13 +5,3 @@
   font-size: 4rem;
   color: #fff;
 }
-
-@media screen and (max-width: 600px) {
-  @import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
-  .logo {
-    font-family: "Salsa", cursive;
-    font-size: 2rem;
-    font-weight: 800;
-    color: #fff;
-  }
-}
