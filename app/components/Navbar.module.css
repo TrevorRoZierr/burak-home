@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 
 .logo {
-  font-family: "Salsa", cursive;
+  font-family: "DM Serif Display", serif;
   font-size: 4rem;
   color: #fff;
 }
 
 @media screen and (max-width: 600px) {
   .logo {
-    font-size: 2rem;
-    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-family: "DM Serif Display", serif;
   }
 }
