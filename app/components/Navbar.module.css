@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,500;0,600;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 .logo {
-  font-family: "Asap", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 4rem;
   color: #fff;
 }
@@ -9,6 +9,7 @@
 @media screen and (max-width: 600px) {
   .logo {
     font-size: 1.8rem;
-    font-family: "Asap", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+    color: #fff;
   }
 }
