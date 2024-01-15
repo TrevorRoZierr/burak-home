@@ -5,3 +5,12 @@
     font-size: 4rem;
     color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+    .logo{
+        font-family: 'Salsa', cursive;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #fff;
+    }
+}
