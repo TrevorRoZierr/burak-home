@@ -1,8 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+
+@font-face {
+  font-family: "Salsa";
+  src: url("../public/font/Salsa-Regular.ttf");
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

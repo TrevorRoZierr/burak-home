@@ -18,6 +18,9 @@ const config: Config = {
     borderColor: {
       DEFAULT: "black",
     },
+    fontFamily: {
+      salsa: ["Salsa", "sans-serif"],
+    },
   },
   plugins: [],
 };
